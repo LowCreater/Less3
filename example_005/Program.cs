@@ -1,0 +1,10 @@
+﻿int a = 8;
+int b = 16;
+int c = 13;
+int d = 7;
+int max = a;
+if (b > a) max = b;
+if (c > b) max = c;
+if (d > c) max = c;
+Console.Write("max = ");
+Console.Write(max);
