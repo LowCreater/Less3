@@ -3,24 +3,24 @@
 // N = 5 -> "5, 4, 3, 2, 1"
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
-// void array(int arr)
-// {
-//     if (arr>0)
-//     {
-//         System.Console.Write(arr + " ");
-//         array(arr-1);
-//     }
-// }
-// System.Console.WriteLine("Введите целое положительное число");
-// int number = Convert.ToInt32(Console.ReadLine());
-// if (number<0)
-// {
-//     System.Console.WriteLine("Некорректный ввод!");
-// }
-// else
-// {
-//     array(number);
-// }
+void array(int arr)
+{
+    if (arr>0)
+    {
+        System.Console.Write(arr + " ");
+        array(arr-1);
+    }
+}
+System.Console.WriteLine("Введите целое положительное число");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number<0)
+{
+    System.Console.WriteLine("Некорректный ввод!");
+}
+else
+{
+    array(number);
+}
 
 
 
@@ -32,20 +32,20 @@
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-// System.Console.WriteLine("Введите число M");
-// int m = int.Parse(Console.ReadLine());
-// System.Console.WriteLine("Введите число N");
-// int n = int.Parse(Console.ReadLine());
-// int Summa = 0;
-// void Sum(int a, int b)
-// {
-//     for (int i = m; i <= n; i++)
-//     {
-//         Summa = Summa + i;
-//     }
-//     System.Console.WriteLine(Summa);
-// }
-// Sum(m, n);
+System.Console.WriteLine("Введите число M");
+int m = int.Parse(Console.ReadLine());
+System.Console.WriteLine("Введите число N");
+int n = int.Parse(Console.ReadLine());
+int Summa = 0;
+void Sum(int a, int b)
+{
+    for (int i = m; i <= n; i++)
+    {
+        Summa = Summa + i;
+    }
+    System.Console.WriteLine(Summa);
+}
+Sum(m, n);
 
 
 
