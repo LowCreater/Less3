@@ -64,7 +64,7 @@ System.Console.WriteLine("Введите целое неотрицательно
 int m = int.Parse(Console.ReadLine());
 System.Console.WriteLine("Введите целое неотрицательное число n");
 int n = int.Parse(Console.ReadLine());
-int Akkerman(int a, int b)
+int Ackerman(int a, int b)
 {
     if (a == 0)
     {
@@ -72,21 +72,21 @@ int Akkerman(int a, int b)
     }
     else if (a > 0 && b == 0)
             {
-                return Akkerman(a - 1, 1);
+                return Ackerman(a - 1, 1);
             }
             else if (a > 0 && b > 0)
                     {
-                        return Akkerman(a - 1, Akkerman(a, b - 1));
+                        return Ackerman(a - 1, Ackerman(a, b - 1));
                     }
                     else 
                     {
                         return -1;
                     }
 }
-int AkkermanMethod = Akkerman(m, n);
-if (AkkermanMethod == -1)
+int AckermanMethod = Ackerman(m, n);
+if (AckermanMethod == -1)
 {
     System.Console.WriteLine("Неверный ввод!");
 }
 else
-System.Console.WriteLine(AkkermanMethod);
+System.Console.WriteLine(AckermanMethod);
